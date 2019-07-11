@@ -1,4 +1,13 @@
 {
+	"name": "my-first-visits-app",
+	"version": "1.0.0",
+	"private": true,
+	"license": "MIT",
+	"repository" : { 
+                "type" : "git",
+                "url" : "https://github.com/npm/npm.git"
+        },
+
 	"dependencies": {
 		"express" : "*",
 		"redis" : "2.8.0"
