@@ -8,7 +8,7 @@ const client = redis.createClient({
 });
 client.set('visits', 0);
 
-app.get("/", (req,res){
+app.get("/", (req,res) => {
 
 	client.get('visits',  (err, visits) => {
 		res.send("number of visits" + visits);
@@ -17,6 +17,6 @@ app.get("/", (req,res){
 });
 
 
-app.listen(8081, ()=> {
+app.listen(8081, () => {
 	console.log("listening on port 8081");
 });
