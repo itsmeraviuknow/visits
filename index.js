@@ -1,5 +1,5 @@
-const express = requrie("express");
-const redis = requrie("redis");
+const express = require("express");
+const redis = require("redis");
 
 const app = express();
 const client = redis.createClient({
