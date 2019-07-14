@@ -10,9 +10,9 @@ COPY package.json .
 #RUN apk install nodejs 
 #RUN npm install -g react-tools
 
-RUN npm install --quiet
+#RUN npm install --quiet
 
 COPY . .
 
-#CMD ["npm", "install"]
+CMD ["npm", "install" "--quiet"]
 
