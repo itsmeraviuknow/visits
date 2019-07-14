@@ -2,5 +2,9 @@ version: '3'
 services:
   node-app:
     build: .
+    command: sh -c "npm install && npm run start"
+    volumes:
+      - .:/usr/app
+      - /ust/app/node_modules
     ports:
       - '4001:8081'

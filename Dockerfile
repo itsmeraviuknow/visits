@@ -1,6 +1,6 @@
-FROM node:alpine
+FROM node:10.16.0-alpine
 
-WORKDiR '/app'
+WORKDiR '/usr/app'
 
 COPY package.json .
 
@@ -10,7 +10,9 @@ COPY package.json .
 #RUN apk install nodejs 
 #RUN npm install -g react-tools
 
-copy . .
+RUN npm install --quiet
 
-CMD ["npm", "install"]
+COPY . .
+
+#CMD ["npm", "install"]
 
